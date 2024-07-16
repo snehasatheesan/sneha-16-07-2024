@@ -1,0 +1,76 @@
+1.
+
+public class asc {
+
+    public static void main(String[] args) {
+        int[] arr = {13, 2, 4, 15, 12, 10, 5};
+        customSort(arr);
+        for (int num:arr ) {
+            System.out.print(num + " ");
+        }
+    }
+        
+public static void customSort(int[] arr) {
+    int n = arr.length;
+    
+
+}
+}
+
+
+
+
+____________________________________________________________________________________________________________________________________________
+
+
+2. Given a number n.Print all the numbers from 1 to n which are even.
+import java.util.Scanner;
+
+public class bot1 {
+    public static void main(String[] args) {
+        Scanner x= new Scanner(System.in);
+        System.out.println("enter the number");
+        int v= x.nextInt();
+        System.out.println("enter no: "+v);
+        for(int i=1; i<=v; i++){
+         if(i%2==0){
+        System.out.println(i);
+         }
+
+            x.close();
+        }
+       
+    }
+}
+__________________________________________________________________________________________________________________________________
+
+
+3. Given a number n.Print n fibonacci numbers.
+import java.util.Scanner;
+
+public class bot2 {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the number");
+        int v= sc.nextInt();
+        
+        sc.close();
+        
+
+        if (v <= 0) {
+            System.out.println("Please enter a positive number");
+            return;
+        }
+
+        int a = 0, b = 1;
+        System.out.print(  " Fibonacci numbers are:"+v);
+
+        for (int i = 1; i <= v; i++) {
+            System.out.print(a + " ");
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+    }
+    }
+
